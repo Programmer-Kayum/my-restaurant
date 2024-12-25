@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SectionTitle from "../../SectionTitle/SectionTitle";
 import MenuItam from "../../Shared/MenuItam/MenuItam";
-import { Link } from "react-router-dom";
 
 const PopularIteam = () => {
   const [menu, setMenu] = useState();
@@ -29,11 +28,9 @@ const PopularIteam = () => {
           ))}
         </div>
         <div className="mt-6 text-center">
-          <Link to={"/menu"}>
-            <button class="px-4 py-2 bg-blue-600 text-white font-semibold rounded shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition-all">
-              View Full Menu
-            </button>
-          </Link>
+          <button class="px-4 py-2 bg-blue-600 text-white font-semibold rounded shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition-all">
+            View Full Menu
+          </button>
         </div>
       </div>
     </section>
