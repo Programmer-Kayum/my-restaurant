@@ -5,13 +5,10 @@ const BistroBossSection = () => {
     <div className="my-4">
       <div className="relative">
         {/* Background Image */}
-        <div className="h-[300px] lg:h-[500px] bg-cover bg-center">
-          <img
-            src={chefService}
-            alt="Chef Service"
-            className="w-full h-full object-cover"
-          />
-        </div>
+        <div
+          className="h-[300px] lg:h-[500px] bg-cover bg-center bg-fixed"
+          style={{ backgroundImage: `url(${chefService})` }}
+        ></div>
 
         {/* Centered Content */}
         <div className="absolute inset-0 flex items-center justify-center px-4">

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SectionTitle from "../../SectionTitle/SectionTitle";
 import MenuItam from "../../Shared/MenuItam/MenuItam";
+import { Link } from "react-router-dom";
 
 const PopularIteam = () => {
   const [menu, setMenu] = useState();
@@ -21,14 +22,18 @@ const PopularIteam = () => {
         heading="FROM OUR MENU"
       ></SectionTitle>
 
-      <div className="max-w-5xl mx-auto my-4">
+      <div className="max-w-5xl mx-auto  my-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {menu?.map((item) => (
             <MenuItam key={item._id} item={item}></MenuItam>
           ))}
         </div>
         <div className="mt-6 text-center">
-          <button className="text-blue-600 underline">VIEW FULL MENU</button>
+          <Link to={"/menu"}>
+            <button class="px-4 py-2 bg-blue-600 text-white font-semibold rounded shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition-all">
+              View Full Menu
+            </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -16,14 +16,14 @@ const MenuItem = ({ item }) => {
       {/* Text Section */}
       <div className="flex-1">
         {/* Title and Price */}
-        <div className="flex justify-between items-center">
-          <h3 className="text-lg font-semibold uppercase text-gray-800">
-            {name} <span className="ml-2">.............................</span>
+        <div className="lg:flex justify-between items-center">
+          <h3 className="lg:text-lg font-semibold uppercase text-gray-800">
+            {name}{" "}
           </h3>
-          <p className="text-lg font-semibold text-yellow-500">$ {price}</p>
+          <p className="lg:text-lg font-semibold text-yellow-500">$ {price}</p>
         </div>
         {/* Description */}
-        <p className="text-gray-600 mt-2">{recipe}</p>
+        <p className="text-gray-600 mt-2"> >> {recipe}</p>
       </div>
     </div>
   );
